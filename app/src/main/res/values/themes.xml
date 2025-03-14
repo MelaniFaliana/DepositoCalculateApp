@@ -15,6 +15,12 @@
         <!-- Warna teks pada AppBar -->
         <item name="windowActionBar">true</item>
         <item name="windowNoTitle">false</item>
+        <item name="android:windowBackground">@color/white</item>
 
     </style>
+
+    <style name="SpinnerStyle" parent="Widget.AppCompat.Spinner">
+        <item name="android:textColor">@color/black</item> <!-- Warna teks saat tema terang -->
+    </style>
+
 </resources>

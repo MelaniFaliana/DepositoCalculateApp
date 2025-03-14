@@ -102,7 +102,7 @@ class MainActivity : AppCompatActivity() {
                     editText.setSelection(formatted.length)
 
                     // **LOGIKA PAJAK**: Jika lebih dari 7.500.000, pajak 20% muncul, jika tidak kosong
-                    if (parsed > 7_500_000) {
+                    if (parsed >= 7_500_000) {
                         etPajak.setText("20%")
                     } else {
                         etPajak.setText("") // Kosongkan jika kurang dari atau sama dengan 7.500.000
@@ -150,7 +150,7 @@ class MainActivity : AppCompatActivity() {
                     var hasilTenor = 0.0  // Hasil tenor berdasarkan bulan
 
                     // **Hitung bunga setelah pajak jika nominal > 7.500.000**
-                    if (nominal > 7_500_000) {
+                    if (nominal >= 7_500_000) {
                         val a =
                             (nominal * sukuBunga * 30) / (365 * 100) // Perhitungan bunga sebelum pajak
                         val b = a * 0.20  // Pajak 20%

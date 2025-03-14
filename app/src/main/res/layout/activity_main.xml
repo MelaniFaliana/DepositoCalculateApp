@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -73,7 +72,7 @@
             android:id="@+id/tvPajak"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Pajak (>7.5 jt)"
+            android:text="Pajak (>=7.5 jt)"
             android:layout_marginTop="8dp" />
 
         <EditText
@@ -149,7 +148,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nominal Setelah Tenor Berakhir" />
+            android:text="Estimasi Setelah Tenor Berakhir" />
         <EditText
             android:id="@+id/etNominalSetelahTenor"
             android:layout_width="match_parent"

@@ -9,8 +9,12 @@
         <item name="colorPrimary">@color/blue</item>
         <item name="colorPrimaryVariant">@color/blue</item>
 
+
         <item name="colorSurface">@color/blue</item>
         <item name="colorSurfaceVariant">@color/blue</item>
+
+        <item name="android:textColor">@color/blue</item>
+        <item name="backgroundColor">@color/black</item>
 
         <!-- Warna teks pada AppBar -->
         <item name="android:textColorPrimary">@color/blue</item>
@@ -18,4 +22,6 @@
         <item name="windowNoTitle">false</item>
 
     </style>
+
+
 </resources>
