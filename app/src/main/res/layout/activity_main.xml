@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="75dp"
+        android:padding="16dp">
+
+        <!-- Form Input -->
+        <TextView
+            android:id="@+id/tvMasukkanData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masukkan Data"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/tvNominal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nominal Deposito"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/etNominal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan jumlah deposito..."
+            android:inputType="numberDecimal"
+            android:background="@color/gray_light"
+            android:padding="12dp" />
+
+        <TextView
+            android:id="@+id/tvTenor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tenor (Bulan)"
+            android:layout_marginTop="8dp" />
+
+        <Spinner
+            android:id="@+id/spinnerTenor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/tenor_options"
+            android:background="@color/gray_light" />
+
+        <TextView
+            android:id="@+id/tvSukuBunga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Suku Bunga"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/etSukuBunga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:clickable="false"
+            android:focusable="false"
+            android:padding="12dp" />
+
+        <TextView
+            android:id="@+id/tvPajak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pajak (>7.5 jt)"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/etPajak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:clickable="false"
+            android:focusable="false"
+            android:padding="12dp" />
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/btnReset"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Set Ulang"
+                android:backgroundTint="@color/gray_light"
+                android:textColor="@android:color/black"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnHitung"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Hitung"
+                android:backgroundTint="@color/blue"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <!-- Hasil Perhitungan -->
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hasil Perhitungan"
+            android:textStyle="bold"
+            android:paddingTop="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bunga (Sebelum Pajak)" />
+        <EditText
+            android:id="@+id/etBungaSebelumPajak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:focusable="false"
+            android:padding="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bunga per-Bulan" />
+        <EditText
+            android:id="@+id/etBungaSetelahPajak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:focusable="false"
+            android:padding="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nominal Setelah Tenor Berakhir" />
+        <EditText
+            android:id="@+id/etNominalSetelahTenor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:focusable="false"
+            android:padding="12dp"/>
+    </LinearLayout>
+</ScrollView>

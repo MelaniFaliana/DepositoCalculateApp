@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">DepositoCalculateApp</string>
+
+    <string-array name="tenor_options">
+        <item>Pilih Tenor</item>
+        <item>1 Bulan</item>
+        <item>3 Bulan</item>
+        <item>6 Bulan</item>
+        <item>12 Bulan</item>
+    </string-array>
+
+</resources>
