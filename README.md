@@ -1,3 +1,5 @@
+**Aplikasi Kalkulator Deposito**
+----------------------------------
 Aplikasi Kalkulator Deposito dikembangkan dengan tujuan untuk memberikan estimasi terkait suku bunga, pajak, dan nominal yang didapatkan nasabah setelah tenor berakhir. 
 Aplikasi ini dikembangkan dengan menggunakan Android Studio dan bahasa pemrograman Kotlin. 
 
